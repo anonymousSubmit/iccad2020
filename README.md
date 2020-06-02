@@ -18,8 +18,10 @@ Vivado results: ftune-fpga-xilinx/vivado/ and execute "vivado_ftune.sh"
 	- OpenMP (https://www.openmp.org/resources/openmp-compilers-tools/)
 		- wget https://download.open-mpi.org/release/open-mpi/v4.0/openmpi-4.0.1.tar.gz; tar -xvf openmpi-4.0.1.tar.gz
 		- cd openmpi-4.0.1; ./configure; make -j12 all install
-	- export ./abc PATH TO .bashrc
-		For example: echo "export PATH=$(pwd):\${PATH}" >> ~/.bashrc; source ~/.bashrc
+	- Yosys -- https://github.com/YosysHQ/yosys
+	- export "abc" and "yosys" PATH TO .bashrc to have a global access
+		- Instruction:  echo "export PATH=$(pwd):\${PATH}" >> ~/.bashrc; source ~/.bashrc
+		- Testing : If PATH added succesfully, you should be able to type "abc" and "yosys" at any location of your LINUX system 
 	
 ## "ftune" implemented in ABC
 
